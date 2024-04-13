@@ -1,0 +1,41 @@
+###########random and creating own module
+
+##creste a new file with any name (here mod1)
+##store info in that file(here pi=3.14)
+##import your file in main.py
+  
+  
+import random
+import mod1
+
+r=random.randint(1,10)
+print(r)
+
+print(mod1.pi)
+
+#creatinga random floating point number
+rf=random.random()
+print(rf)
+
+
+############  coin toss program
+  import random
+toss=random.randint(0,1)
+
+if toss==1:
+  print("Heads")
+  
+else:
+  print("Tails")
+
+######state of india(lists)
+  stateofindia=['karnataka','kerala','tamilnadu','telangana','andhra']
+
+print(stateofindia[0])
+print(stateofindia[4])
+stateofindia.append("goa")
+print(stateofindia)
+
+stateofindia.extend(["gujarat","punjab"])
+print(stateofindia)
+  

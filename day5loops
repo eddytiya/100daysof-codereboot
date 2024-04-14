@@ -58,13 +58,45 @@ for n in range(0, len(student_scores)):
 
 # Write your code below this row 👇
 high_scores=0
+for score in student_scores:
+    if score > high_scores:
+     high_scores=score
+print(f"The highest score in the class is: {high_scores}")
+
+
 
 ###############33range fun in for loop
 total=0
 for number in range(1,101):
   total=total+number
 print(total)
-for score in student_scores:
-    if score > high_scores:
-     high_scores=score
-print(f"The highest score in the class is: {high_scores}")
+
+
+#############even sum addition
+
+target = int(input()) # Enter a number between 0 and 1000
+# 🚨 Do not change the code above ☝️
+
+# Write your code here 👇
+
+total=0
+for sum in range(0,target+1,2):
+  total+=sum
+print(total)  
+
+
+###################fizzbuzz
+# Write your code here 👇
+# Write your code here 
+target=100
+
+for numb in range(1,101):
+    
+    if numb  % 3==0 and numb % 5==0:
+        print("FizzBuzz")
+    elif numb % 3==0:
+        print("Fizz")
+    elif numb % 5==0:
+        print("Buzz")
+    else:
+        print(numb)

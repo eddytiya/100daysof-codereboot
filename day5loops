@@ -1,0 +1,65 @@
+###############basics FOR loop
+  #For Loop with Lists
+fruits = ["Apple", "Peach", "Pear","banana"]
+for fruit in fruits:
+  #print(fruits)#prints list 4 times
+  print(fruit)#prients each element of the list
+  print(fruit + " Pie")
+
+
+
+  ##############AVG height
+  (what i did)
+  # Input a Python list of student heights
+student_heights = input().split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+  
+# Write your code below this row 👇
+
+for student in student_heights:
+    add=sum(student_heights)
+    print(f"total height ={add}")
+    studlen=len(student_heights)
+    print(f"number of students ={studlen}")
+    avd_heights=add/studlen
+    print(f"average heights ={avd_heights}")
+
+  (correct way)
+  # Input a Python list of student heights
+student_heights = input().split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
+  
+# Write your code below this row 👇
+total_height = 0
+for height in student_heights:
+  total_height += height
+print(total_height)
+
+# find number of students
+number_of_students = 0
+for student in student_heights:
+  number_of_students += 1
+print(number_of_students)
+
+# find average heights:
+average_height = round((total_height / number_of_students))
+print(f"The average height is {average_height} cm")
+
+
+  ########################################highest mks
+  # Input a list of student scores
+student_scores = input().split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+
+# Write your code below this row 👇
+high_scores=0
+
+for score in student_scores:
+    if score > high_scores:
+     high_scores=score
+print(f"The highest score in the class is: {high_scores}")

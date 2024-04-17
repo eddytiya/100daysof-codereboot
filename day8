@@ -1,0 +1,45 @@
+##########prime no
+def prime_checker(number):
+  is_prime = True
+  for i in range(2, number):
+    if number % i == 0:
+      is_prime = False
+  if is_prime:
+    print("It's a prime number.")
+  else:
+    print("It's not a prime number.")
+    
+# Your code above this line 👆
+n = int(input()) # Check this number
+prime_checker(number=n)
+
+
+
+
+########paint area calac
+  # Write your code below this line 👇
+import math
+def paint_calc(height,width,cover):
+  area=test_h*test_w
+  no_of_cans=area/coverage
+  roundup=math.ceil(no_of_cans)
+  print(f"You'll need {roundup} cans of paint.")
+  
+
+
+
+# Write your code above this line 👆
+# Define a function called paint_calc() so the code below works.   
+
+# 🚨 Don't change the code below 👇
+test_h = int(input()) # Height of wall (m)
+test_w = int(input()) # Width of wall (m)
+coverage = 5
+paint_calc(height=test_h, width=test_w, cover=coverage)
+
+
+
+
+
+
+    

@@ -1,3 +1,6 @@
+#################################IF/else stmts
+
+
 ####### driving
 a=int(input("enter your age:"))
 print(f"your age is {a}")
@@ -25,4 +28,60 @@ print(f"your number is {number}")
 if number%7 == 0:
     print("your number is divisible by 7")
 else:
-    print("your number is not divisible by 7")    
+    print("your number is not divisible by 7")   
+
+#####program to disp hello if no is divisible by 5 otherwise print bye
+number=int(input("enter your number:"))
+print(f"your number is {number}")
+
+if number%5 == 0:
+    print("hello your number is a multiple of 5")
+else:
+    print("bye your number is not a multiple of 5")    
+
+########program to print the last digit of a number
+number=int(input("enter your number:"))
+print(f"your number is {number}")
+ans=int(number%10) 
+print(f"the last digit of your number is:{ans}")
+
+########program to print the last digit of a number adn check whether it is divisible by 3 or not
+number=int(input("enter the number:"))
+div=number%10
+print(f"the last digit of the number is {div}")
+
+if div%3==0:
+    print("the number is divisible by 3")
+else:
+    print("the number is not divisible by 3")
+
+
+
+######program to find a grade of student
+percentage=int(input("enter the percentage"))
+print(f"the percentage is {percentage}")
+
+if percentage>90:
+    print("A")
+elif percentage>80 and percentage<=90:
+    print("B")
+elif percentage>=60 and percentage<=80:
+    print("C")
+else:
+    print("D")
+
+
+###########road tax acc to bike price
+cost=int(input("enter the cost price"))
+print(f"the cost of bike is {cost}")
+tax=0
+if cost>100000:
+    tax=(15/100)*cost
+    print(f"pay 15% road tax amount:{tax}")
+elif cost>50000 and cost<=100000:
+    tax=(10/100)*cost
+    print(F"pay 10% road tax amount:{tax}")
+else:
+    tax=(5/100)*cost
+    print(f"pay 5% road tax amount:{tax}")
+

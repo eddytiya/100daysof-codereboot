@@ -85,3 +85,62 @@ else:
     tax=(5/100)*cost
     print(f"pay 5% road tax amount:{tax}")
 
+
+###########leap year
+year=int(input("enter the year"))
+print(f"the year is {year}")
+
+if year %4==0:
+    print("it is a leap year ")
+else:
+    print("its not a leap year")
+
+######print the week
+number=int(input("enter the week number"))
+print(f"the number  is {number}")
+
+if number==1:
+    print("monday")
+elif number==2:
+    print("tuesday")
+elif number==3:
+    print("wednesday")
+elif number==4:
+    print("thursday")
+elif number==5:
+    print("friday") 
+elif number==6:
+    print("saturday")
+else:
+    print("sunday")
+
+
+
+###printing the year
+number=int(input("enter the year number"))
+print(f"the year number is {number}")
+
+if number==1:
+    print("january(31)")
+elif number==2:
+    print("february(28/29)")
+elif number==3:
+    print("march(31)")
+elif number==4:
+    print("april(30)")
+elif number==5:
+    print("may(31)") 
+elif number==6:
+    print("june(30)")
+elif number==7:
+    print("july(31)")
+elif number==8:
+    print("august(31)")  
+elif number==9:
+    print("sept(30)")
+elif number==10:
+    print("october(31)")
+elif number==11:
+    print("november(30)")
+else:
+    print("december(31)")    

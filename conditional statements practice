@@ -140,6 +140,21 @@ elif number==9:
     print("sept(30)")
 elif number==10:
     print("october(31)")
+
+
+#######EK SIDE SE CITY DALO UDHAR SE MONUMENT NIKALO
+city_name=input('enter the name of the city:')
+
+citylower=city_name.lower()
+
+if citylower=="delhi":
+    print("your monument is red fort")
+elif citylower=="agra":
+    print("your monument is taj mahal")
+elif citylower=="jaipur":
+    print("your monument is jal mahal")
+else :
+    print ("enter the correct name")
 elif number==11:
     print("november(30)")
 else:

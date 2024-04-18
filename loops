@@ -1,0 +1,88 @@
+####intro1(strings)
+name="aditya"
+for i in name:
+    print(i)
+####intro2(list)
+colours=["red","blue","green","yellow"]
+
+for colour in colours:
+    print(colour)
+
+
+
+colours=["red","blue","green","yellow"]
+
+for colour in colours:
+    print(colour)
+    for i in colour:
+        print(i)
+
+
+
+########intro3(range fun)
+
+
+for k in range(5):
+    print(k)//prints no from 0 to 4
+
+//but if u want to start from 1 
+
+for k in range(5):
+    print(k+1)
+
+####### user input natural numbers
+n=int(input("enter the number of natural numbers"))
+
+for i in range(1,n):
+    print(i)
+
+#######first 10 natural nos
+n=11
+
+for i in range(1,n):
+    print(i)
+
+
+#########even numbers
+n=int(input("enter the number of natural numbers"))
+
+for i in range(1,n,2):
+    print(i+1)
+          OR
+n=10
+
+for i in range(n):
+    if i%2==0:
+        print(i)
+
+
+
+#########addition of numbers
+n=int(input("enter the numbers:"))
+
+add=0
+
+for i in range(1,n+1):
+    #print(i)
+    add+=i
+print(add)
+
+
+######addition of all odd numbers
+n=int(input("enter the number:"))
+
+sum=0
+
+for i in range (1,n):
+    if i%2!=0:
+     #print(i)
+    
+     sum+=i
+print(sum)    
+
+#######table
+number=int(input("enter the number:"))
+
+for i in range(number+1):
+    print(number,"X",i,"=",i*number)
+

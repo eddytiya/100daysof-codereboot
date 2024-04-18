@@ -236,3 +236,76 @@ elif no3>no1 and no3>no1 :
 else:
     print("the numbers are equal")    
 
+###############boiling point of water
+temp =int(input('enter the temperature :'))
+
+
+if temp>=100:
+    print(f"it is boiling point")
+else:
+    print("not the boiling popint")    
+
+
+######find the age of the oldest one
+age1 =int(input('enter the age :'))
+age2 =int(input('enter the age :'))
+age3 =int(input('enter the age :'))
+age4 =int(input('enter the age :'))
+
+if age1>age2 and age1>age3 and age1>age4 :
+    print(f"the oldest is {age1}")
+elif age2>age1 and age2>age3 and age2>age4 :
+    print(f"the oldest is {age2}")
+elif age3>age1 and age3>age2 and age3>age4 :
+    print(f"the oldest is {age3}")
+elif age4>age1 and age4>age2 and age4>age3 :
+    print(f"the oldest is {age4}")    
+else:
+    print("the numbers are equal") 
+
+#######find the age of youngest
+age1 =int(input('enter the age :'))
+age2 =int(input('enter the age :'))
+age3 =int(input('enter the age :'))
+age4 =int(input('enter the age :'))
+
+if age1<age2 and age1<age3 and age1<age4 :
+    print(f"the youngest is {age1}")
+elif age2<age1 and age2<age3 and age2<age4 :
+    print(f"the youngest is {age2}")
+elif age3<age1 and age3<age2 and age3<age4 :
+    print(f"the youngest is {age3}")
+elif age4<age1 and age4<age2 and age4<age3 :
+    print(f"the youngest is {age4}")    
+else:
+    print("the numbers are equal") 
+
+
+#### vowel####
+ch=input("enter the alphabet")
+
+vowels="aeiouAEIOU"
+
+if ch in vowels:
+    print("it is a vowel")
+else:
+    print("it is a consonent")
+
+
+##################attendance and exam eligibility
+workingdays=int(input("enter the working days"))
+absentdays=int(input("enter the total number of absent days"))
+
+totalworking=workingdays-absentdays
+#print(totalworking)
+
+percentage=(totalworking/workingdays)*100
+
+#print(percentage)
+
+if percentage<75:
+    print("you are not eligible for the exam")
+else:
+    print("u r eligible")
+    
+###### grade calc

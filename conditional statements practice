@@ -342,3 +342,81 @@ elif yearsofservice<=6:
     print(bonus)    
 else:
     print("no bonus")
+
+
+##### marked price and net amount
+price=int(input("enter the marked price"))
+print(f"the price is  {price}")
+net=0
+
+if price>10000:
+    net=(20/100)*price
+    print(net)
+elif price>7000 and price<=10000:
+    net=(15/100)*price
+    print(net)
+elif price<7000:
+    net=(10/100)*price
+    print(net)    
+else:
+    print("no discount")
+
+
+###########type of triangle
+side1=int(input("enter the length:"))
+side2=int(input("enter the length:"))
+side3=int(input("enter the length:"))
+
+if side1==side2==side3:
+    print("it is an equilateral triangle")
+elif side1!=side2!=side3:
+    print("it is scalene triangle")
+else:
+    print("it is isosceles")
+
+
+############maths
+no1=int(input("enter the no1:"))
+no2=int(input("enter the no2:"))
+
+operator=input("enter the operator + - * / :")
+
+ans=0
+
+if operator == '+':
+    ans=no1+no2
+    print(ans)
+elif operator == '-':
+    ans=no1-no2
+    print(ans)
+elif operator == '*':
+    ans=no1*no2
+    print(ans)
+elif operator == '/':
+    ans=no1/no2
+    print(ans)
+else:
+    print("error")
+
+
+#########wage calc
+age=int(input("enter the age"))
+sex=input("enter the gender M/F:")
+nooddays=int(input("enter the no of working days"))
+
+wd=0
+
+if 18<=age<30 and sex=='M':
+    wd=nooddays*700
+    print(f"wages are {wd}")
+elif 18<=age<30 and sex=='F':
+    wd=nooddays*750
+    print(f"wages are {wd}")    
+elif 30<=age<40 and sex=='M':
+    wd=nooddays*800
+    print(f"wages are {wd}")
+elif 30<=age<40 and sex=='f':
+    wd=nooddays*850
+    print(f"wages are {wd}")    
+else:
+    print("ghotala")

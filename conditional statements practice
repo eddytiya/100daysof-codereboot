@@ -158,4 +158,81 @@ else :
 elif number==11:
     print("november(30)")
 else:
-    print("december(31)")    
+    print("december(31)")
+
+################check whether the number entered is a 3 digit number or not
+number=input('enter the number :')
+
+length_of_no=len(number)
+print(length_of_no)
+
+if length_of_no==3:
+    print("yes it is a 3 digit number")
+else:
+    print("its not a 3 digit number")
+
+#################voting
+age=int(input('enter the age :'))
+
+if age>=18:
+    print("yes u r eligible to vote")
+else:
+    print("no u r not eligible")
+
+############senior citizen
+age=int(input('enter the age :'))
+
+if age>=60:
+    print("yes u r senior citizen")
+else:
+    print("no u r not ")
+
+#############find the lowest number
+no1 =int(input('enter the first number :'))
+no2 =int(input('enter the second number :'))
+
+if no1>no2:
+    print(f"number {no2} is the lowest number")
+else:
+    print(f"number {no1} is the lowest number")
+
+#############find the largest number
+no1 =int(input('enter the first number :'))
+no2 =int(input('enter the second number :'))
+
+if no1>no2:
+    print(f"number {no1} is the largest number")
+else:
+    print(f"number {no2} is the largest number")
+
+###############positive or negative number
+no =int(input('enter the number :'))
+
+if no>0 :
+    print("the number is +ve")
+else:
+    print("-ve")
+
+
+#############check whether the number is divisible by 2 and 3 both
+no =int(input('enter the number :'))
+
+if no%2==0 and no%3==0 :
+    print("the number is divisible by bboth 2 and 3")
+else:
+    print("no they r not")
+
+############find the largest number from the 3 numbers 
+no1 =int(input('enter the number :'))
+no2 =int(input('enter the number :'))
+no3 =int(input('enter the number :'))
+
+if no1>no2 and no1>no3 :
+    print(f"the largest no is {no1}")
+elif no2>no1 and no2>no3 :
+    print(f"the largest no is {no2}")
+elif no3>no1 and no3>no1 :
+    print(f"the largest no is {no3}")
+else:
+    print("the numbers are equal")    
+

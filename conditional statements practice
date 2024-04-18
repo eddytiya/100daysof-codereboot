@@ -309,3 +309,36 @@ else:
     print("u r eligible")
     
 ###### grade calc
+percentage=int(input("enter the percentage"))
+print(f"the percentage is {percentage}")
+
+if percentage>80:
+    print("A+")
+elif percentage>60 and percentage<=80:
+    print("A")
+elif percentage>=50 and percentage<=60:
+    print("B+")
+elif percentage>=45 and percentage<=50:
+    print("B")
+elif percentage>=25 and percentage<=45:
+    print("C")    
+else:
+    print("D")
+
+##########bonus calc
+salary=int(input("enter your current salary"))
+yearsofservice=int(input("enter the years of service"))
+
+bonus=0
+
+if yearsofservice>10:
+    bonus=(yearsofservice/100)*salary
+    print(bonus)
+elif yearsofservice>=6 and yearsofservice<=10:
+    bonus=(yearsofservice/100)*salary
+    print(bonus)
+elif yearsofservice<=6:
+    bonus=(yearsofservice/100)*salary
+    print(bonus)    
+else:
+    print("no bonus")

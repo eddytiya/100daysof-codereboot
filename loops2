@@ -27,6 +27,17 @@ print("out of bounds")
 i=5
 while(i>0):
     print(i)
+
+
+########pyramid
+rows=int(input("enter the number of rows:"))
+
+
+for i in range(0,rows,1):
+    for j in range(i):
+        print("*",end="")
+    print()
+
     i-=1
 
 
@@ -78,4 +89,8 @@ number=int(input("enter a number:"))
 
 for i in range(number+1):
     print(number,"x",i,"=",i*number)
+
+
+
+##############reverse pyramid
     

@@ -1,0 +1,67 @@
+#error handling try..except
+
+'''
+try block code runs when there is no error
+if error is caught then except is caused
+this is used to prevent program to be halted
+'''
+#my code
+'''
+a=int(input("enter the number:"))
+
+print(f"multiplication table of {a} is:")
+
+for i in range(1,a):
+    print(a,"x",i,"=",i*a)
+'''
+#harry code 
+'''
+a=input("enter the number:")
+print(f"multiplication table of {a} is:")
+
+for i in range(1,11):
+    print(f"{int(a)} X {i} = {int(a)*i}")
+
+print("smoe imp lines of code")
+print("end of program")
+'''
+#suppose for the above code u put input as harry
+#hume kuch aaisa karna hai ki mein chahu toh mera code run ho jaye
+#agar program properly work ho raha hai toh ho jaye varna
+#agar eroor aaye toh kuch aur ho jaye
+
+
+a=input("enter the number:")
+print(f"multiplication table of {a} is:")
+try:
+    for i in range(1,11):
+        print(f"{int(a)} X {i} = {int(a)*i}")
+except Exception as e:
+    print("sorry some error occured OR INVALID IP")        
+
+print("smoe imp lines of code")
+print("end of program")
+
+
+#another example
+#no int is set to num
+try:
+    num=input("enter an integer")
+    i=8
+     
+    i+=num
+    print(i)
+except:
+    print("the entered number is not an interger")
+
+
+##another example
+
+try:
+    num=input("enter an integer")
+    a=[6,3]
+    print(a[num])
+except ValueError:
+    print("number enterde in not an integer")  
+except IndexError:
+    print("index Error")      
